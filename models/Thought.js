@@ -18,12 +18,8 @@ const thoughtSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		friends: [
-			{
-				type: Schema.Types.ObjectId,
-				ref: "User",
-			},
-		],
+		//Array of nested documents created with the `reactionSchema`
+		reactions: [reactionSchema],
 	},
 	{
 		// Mongoose supports two Schema options to transform Objects after querying MongoDb: toJSON and toObject.
@@ -35,6 +31,7 @@ const thoughtSchema = new Schema(
 	}
 );
 
+// Creates a virtual called `reactionCount` that retrieves the length of the thought's `reactions` array field on query.
 thoughtSchema.virtual("reactionCount").get(function () {
 	return this.reactions.length;
 });
