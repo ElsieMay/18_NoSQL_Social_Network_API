@@ -36,6 +36,7 @@ https://mongoosejs.com/docs/4.x/docs/subdocs.html<br>
 https://mongoosejs.com/docs/subdocs.html<br>
 https://stackoverflow.com/questions/18001478/referencing-another-schema-in-mongoose<br>
 https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax<br>
+https://intellipaat.com/community/34287/how-do-i-format-dates-from-mongoose-in-node-js<br>
 
 ## License
 
