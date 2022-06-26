@@ -1,24 +1,24 @@
 const { User, Thought } = require("../models");
-const { User } = require("../routes/api/userRoutes");
+// const { User } = require("../routes/api/userRoutes");
 
 module.exports = {
 	// Get all users
 	getUsers(req, res) {
 		User.find()
-			.then((courses) => res.json(courses))
+			.then((users) => res.json(users))
 			.catch((err) => res.status(500).json(err));
 	},
 	// Get a user by id
 	getSingleUser(req, res) {
 		User.findOne({ _id: req.params.userId })
 			.select("-__v")
-			.then((course) => (!course ? res.status(404).json({ message: "No user with that ID" }) : res.json(course)))
+			.then((user) => (!user ? res.status(404).json({ message: "No user with that ID" }) : res.json(user)))
 			.catch((err) => res.status(500).json(err));
 	},
 	// Create a user
 	createUser(req, res) {
 		User.create(req.body)
-			.then((course) => res.json(course))
+			.then((user) => res.json(user))
 			.catch((err) => {
 				console.log(err);
 				return res.status(500).json(err);
@@ -34,7 +34,7 @@ module.exports = {
 	// Update a user
 	updateUser(req, res) {
 		User.findOneAndUpdate({ _id: req.params.userId }, { $set: req.body }, { runValidators: true, new: true })
-			.then((course) => (!course ? res.status(404).json({ message: "No user with this id!" }) : res.json(course)))
+			.then((user) => (!user ? res.status(404).json({ message: "No user with this id!" }) : res.json(user)))
 			.catch((err) => res.status(500).json(err));
 	},
 };
