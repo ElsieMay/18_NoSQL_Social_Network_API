@@ -2,7 +2,7 @@
 
 ## Description
 
-The motivation was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I built this site completely from scratch using Express.js for routing, a MongoDB database, and the Mongoose ODM.
+The motivation was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I built this API completely from scratch using Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
 I learnt about using express js, Mongo DB, Mongoose ODM, insomnia, seeding databases, authentication, using schemas and much more.
 
