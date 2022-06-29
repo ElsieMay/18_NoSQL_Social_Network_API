@@ -22,6 +22,8 @@ To install necessary dependencies, run the following command: `npm install` afte
 
 https://drive.google.com/file/d/1PjMz9tSdvIEMoatuKr3mucFNh0p9pRSK/view
 
+![Video](https://github.com/ElsieMay/18_NoSQL_Social_Network_API/blob/main/images/Untitled_%20Jun%2029%2C%202022%209_08%20PM.gif)
+
 ## Usage
 
 The Github repository can be viewed via this link, https://github.com/ElsieMay/18_NoSQL_Social_Network_API.
