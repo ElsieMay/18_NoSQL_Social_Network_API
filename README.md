@@ -20,7 +20,7 @@ To install necessary dependencies, run the following command: `npm install` afte
 
 ## Demo
 
-<iframe src="https://drive.google.com/file/d/1PjMz9tSdvIEMoatuKr3mucFNh0p9pRSK/preview" width="640" height="480"></iframe>
+(https://drive.google.com/file/d/1PjMz9tSdvIEMoatuKr3mucFNh0p9pRSK/view)
 
 ## Usage
 
