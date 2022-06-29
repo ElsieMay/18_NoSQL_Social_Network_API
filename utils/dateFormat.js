@@ -1,3 +1,4 @@
+// Function to send formatted date to models
 const dateFormat = (timestamp) => {
 	var date = new Date(timestamp);
 	var d = date.getDate();

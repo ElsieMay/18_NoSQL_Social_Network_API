@@ -1,5 +1,4 @@
 const { User, Thought } = require("../models");
-// const { User } = require("../routes/api/userRoutes");
 
 module.exports = {
 	// Get all users
@@ -37,11 +36,13 @@ module.exports = {
 			.then((user) => (!user ? res.status(404).json({ message: "No user with this id!" }) : res.json(user)))
 			.catch((err) => res.status(500).json(err));
 	},
+	// create a friend
 	createFriend(req, res) {
 		User.findOneAndUpdate({ _id: req.params.userId }, { $push: { friends: req.params.friendId } }, { runValidators: true, new: true })
 			.then((user) => (!user ? res.status(404).json({ message: "No user with this id!" }) : res.json(user)))
 			.catch((err) => res.status(500).json(err));
 	},
+	// add a friend
 	deleteFriend(req, res) {
 		User.findOneAndUpdate({ _id: req.params.userId }, { $pull: { friends: req.params.friendId } }, { runValidators: true, new: true })
 			.then((user) => (!user ? res.status(404).json({ message: "No user with this id!" }) : res.json(user)))

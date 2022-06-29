@@ -9,22 +9,22 @@ I learnt about using express js, Mongo DB, Mongoose ODM, insomnia, seeding datab
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Demo](#demo)
+- [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 
 ## Installation
 
-To install necessary dependencies, run the following command: `npm install`. Please refer to the below demo for further information.
-
-## Usage
-
-The Github repository can be viewed via this link, https://github.com/ElsieMay/18_NoSQL_Social_Network_API.
+To install necessary dependencies, run the following command: `npm install` after cloning this repository. Please refer to the below demo for further information.
 
 ## Demo
 
 ![Screenshot](https://github.com/ElsieMay/14_Model_View_Controller_Tech_Blog/blob/main/public/images/Screen%20Shot%202022-06-16%20at%2010.53.08%20pm.png)
+
+## Usage
+
+The Github repository can be viewed via this link, https://github.com/ElsieMay/18_NoSQL_Social_Network_API.
 
 ## Credits
 
