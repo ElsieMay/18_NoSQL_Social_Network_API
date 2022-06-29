@@ -20,7 +20,7 @@ To install necessary dependencies, run the following command: `npm install` afte
 
 ## Demo
 
-![Screenshot](https://github.com/ElsieMay/14_Model_View_Controller_Tech_Blog/blob/main/public/images/Screen%20Shot%202022-06-16%20at%2010.53.08%20pm.png)
+![Video](https://drive.google.com/file/d/1PjMz9tSdvIEMoatuKr3mucFNh0p9pRSK/view)
 
 ## Usage
 
