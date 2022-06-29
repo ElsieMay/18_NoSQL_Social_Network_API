@@ -4,14 +4,14 @@ const { getThoughts, getSingleThought, createThought, updateThought, deleteThoug
 // /api/thoughts
 router.route("/").get(getThoughts).post(createThought);
 
-// /api/courses/:thoughtId
+// /api/thoughts/:thoughtId
 router.route("/:thoughtId").get(getSingleThought).put(updateThought).delete(deleteThought);
 
-// /api/courses/:thoughtId/reactions
+// /api/thoughts/:thoughtId/reactions
 // router.route("/api/thoughts/:thoughtId/reactions").post(addReaction);
 router.route("/:thoughtId/reactions").post(addReaction);
 
-// /api/courses/:thoughtId/reactions/:reactionId
+// /api/thoughts/:thoughtId/reactions/:reactionId
 // router.route("/api/thoughts/:thoughtId/reactions/:reactionId").delete(deleteReaction);
 
 module.exports = router;
